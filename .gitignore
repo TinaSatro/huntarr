@@ -1,0 +1,29 @@
+# Config with real credentials
+config/config.yaml
+
+# Your actual resume
+*.pdf
+*.docx
+
+# SQLite database (your personal job tracking data)
+*.db
+*.sqlite
+
+# Go build output
+huntarr
+*.exe
+
+# Go test cache
+*.test
+
+# Environment files
+.env
+.env.*
+
+# OS garbage
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
