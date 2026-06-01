@@ -23,6 +23,7 @@ You still apply. You still decide. Huntarr removes the noise.
 The core design principle: **job boards change constantly**. URLs break, layouts shift, 
 new platforms emerge. The system is built to absorb that change in one place.
 
+
 ​```
 cmd/            → CLI entry point and flags
 internal/
