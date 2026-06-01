@@ -1,0 +1,29 @@
+# Huntarr Configuration
+# Copy this file to config.yaml and fill in your values
+# config.yaml is gitignored — your credentials stay local
+
+claude:
+  api_key: "your-claude-api-key-here"
+
+search:
+  queries:
+    - "staff SRE"
+    - "principal platform engineer"
+    - "infrastructure architect"
+  sources:
+    - linkedin
+    - indeed
+    - glassdoor
+    - jobright
+  location: "Remote"
+  experience_level: "senior"
+
+resume:
+  base_path: "resume/base_resume.txt"
+
+outreach:
+  tone: "professional"
+  max_length: 300
+
+storage:
+  db_path: "huntarr.db"
