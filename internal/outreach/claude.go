@@ -35,12 +35,12 @@ The message should be:
 - Sound human, not templated
 - End with a call to action
 
-Respond ONLY with valid JSON, no markdown, no explanation:
+Respond ONLY with a raw JSON object. No markdown. No backticks. No explanation. Just the JSON:
 {"subject": "...", "body": "..."}`,
 		company, jobTitle, jobDescription)
 
 	body, _ := json.Marshal(map[string]any{
-		"model":      "claude-sonnet-4-20250514",
+		"model":      "claude-sonnet-4-5",
 		"max_tokens": 1000,
 		"messages": []map[string]string{
 			{"role": "user", "content": prompt},

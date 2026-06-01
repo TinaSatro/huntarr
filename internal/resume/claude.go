@@ -33,12 +33,12 @@ COMPANY: %s
 TITLE: %s
 DESCRIPTION: %s
 
-Respond ONLY with valid JSON, no markdown, no explanation:
+Respond ONLY with a raw JSON object. No markdown. No backticks. No explanation. Just the JSON:
 {"headline": "...", "summary": "..."}`,
 		base.Headline, base.Summary, company, jobTitle, jobDescription)
 
 	body, _ := json.Marshal(map[string]any{
-		"model":      "claude-sonnet-4-20250514",
+		"model":      "claude-sonnet-4-5",
 		"max_tokens": 1000,
 		"messages": []map[string]string{
 			{"role": "user", "content": prompt},
