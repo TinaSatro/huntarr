@@ -20,16 +20,19 @@ You still apply. You still decide. Huntarr removes the noise.
 
 ## Architecture
 
-​```
-cmd/            CLI entry point and flags
+The core design principle: **job boards change constantly**. URLs break, layouts shift, 
+new platforms emerge. The system is built to absorb that change in one place.
+
+```
+​​cmd/            → CLI entry point and flags
 internal/
-  sources/      JobSource interface + implementations per board
-  resume/       Resume adaptation via Claude API
-  outreach/     Recruiter message generation
-  sender/       Sender interface (email / browser handoff / export)
-  storage/      SQLite-backed job tracking and deduplication
-config/         YAML configuration, see config.example.yaml
-​```
+  sources/      → JobSource interface + implementations per board
+  resume/       → Resume adaptation via Claude API
+  outreach/     → Recruiter message generation
+  sender/       → Sender interface (email / browser handoff / export)
+  storage/      → SQLite-backed job tracking and deduplication
+config/         → YAML configuration, see config.example.yaml
+```
 
 ## Design Decisions
 
