@@ -28,7 +28,7 @@ resume/       → Resume adaptation via Claude API
 outreach/     → Recruiter message generation
 sender/       → Sender interface (email / browser handoff / export)
 storage/      → SQLite-backed job tracking and deduplication
-config/         → YAML configuration, see config.example.yaml
+config/       → YAML configuration, see config.example.yaml
 
 ## Design Decisions
 
